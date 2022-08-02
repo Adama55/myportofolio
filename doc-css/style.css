@@ -1,0 +1,51 @@
+/*-----------*/
+header {
+  background-color: #181741;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .header__nav {
+  background-color: #D9D9D9;
+  width: 15%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header__nav a {
+  text-decoration: none;
+  color: black;
+}
+header .header__nav:hover {
+  background-color: white;
+  cursor: pointer;
+}
+header .header__nav:hover a {
+  color: #2840fa;
+}
+
+/** section profil**/
+.profil {
+  margin-left: 15px;
+  margin-top: 50px;
+  display: flex;
+}
+.profil img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 60%;
+  box-shadow: -1px 2px 0px 0px #D9D9D9;
+}
+.profil .profil__resume {
+  margin-left: 50px;
+  padding-top: 20px;
+  padding-left: 10px;
+  border-left: 1px solid #D9D9D9;
+  font-size: 120%;
+}
+
+/*# sourceMappingURL=style.css.map */
