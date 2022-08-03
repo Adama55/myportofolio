@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./doc-sass/main.scss:./doc-css/style.css"
+    "sass": "sass --watch ./doc-scss/mai.scss:./doc-css/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
 }

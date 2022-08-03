@@ -1,3 +1,8 @@
+@charset "UTF-8";
+.demi-contener {
+  width: 50%;
+}
+
 /*-----------*/
 header {
   background-color: #181741;
@@ -27,6 +32,11 @@ header .header__nav:hover a {
   color: #2840fa;
 }
 
+#retour {
+  position: fixed;
+  margin-left: 90%;
+}
+
 /** section profil**/
 .profil {
   margin-left: 15px;
@@ -46,6 +56,223 @@ header .header__nav:hover a {
   padding-left: 10px;
   border-left: 1px solid #D9D9D9;
   font-size: 120%;
+}
+
+/** section menu-nav **/
+.menu-nav {
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.menu-nav .menu-nav__items {
+  width: 60%;
+  background-color: #181741;
+  border-radius: 0 50px 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-nav .menu-nav__items .menu-nav__items__btn {
+  background-color: #D9D9D9;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-nav .menu-nav__items .menu-nav__items__btn a {
+  text-decoration: none;
+  color: black;
+}
+.menu-nav .menu-nav__items .menu-nav__items__btn:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.menu-nav .menu-nav__items .menu-nav__items__btn:hover a {
+  color: #2840fa;
+}
+.menu-nav img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: -5%;
+}
+
+/** section comptences et service**/
+.comp-ser {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.comp-ser .comp-ser__service {
+  display: flex;
+  margin-right: 15px;
+  justify-content: flex-end;
+}
+.comp-ser .comp-ser__service h1 {
+  background-color: #D9D9D9;
+  text-align: center;
+  width: 30%;
+}
+.comp-ser .comp-ser__service-content {
+  display: flex;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding-right: 20px;
+  justify-content: flex-end;
+  text-align: end;
+  border-right: 2px solid #D9D9D9;
+  font-size: 120%;
+}
+.comp-ser .comp-ser__competence h1 {
+  background-color: #D9D9D9;
+  text-align: center;
+  width: 30%;
+}
+.comp-ser .comp-ser__competence-content {
+  display: flex;
+  margin-left: 15px;
+  margin: 10px;
+  padding-left: 20px;
+  border-left: 2px solid #D9D9D9;
+  font-size: 120%;
+}
+
+/** section formaton et diplome--**/
+.formation {
+  background-color: #E7E8EF;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 20px;
+}
+.formation .formation__titre { /**on peut utiliser une extention**/
+  width: 100%;
+  height: 70px;
+  background-color: #181741;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.formation .formation__tiret {
+  width: 20px;
+  height: 10px;
+  background-color: #181741;
+  margin: 20px;
+}
+.formation .formation__sous-titre {
+  margin-left: 15px;
+}
+.formation .formation__sous-titre a {
+  display: flex;
+  justify-content: center;
+  color: #2840fa;
+}
+.formation .formation__contenu {
+  margin-left: 15px;
+  padding-left: 30px;
+}
+.formation .formation__contenu p {
+  font-weight: bold;
+}
+
+/** section expérience**/
+.experience {
+  background-color: #E7E8EF;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.experience .experience__titre { /**on peut utiliser une extention**/
+  width: 100%;
+  height: 70px;
+  background-color: #181741;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.experience .experience__tiret {
+  width: 20px;
+  height: 10px;
+  background-color: #181741;
+  margin: 20px;
+}
+.experience .experience__sous-titre {
+  margin-left: 15px;
+}
+.experience .experience__sous-titre a {
+  display: flex;
+  justify-content: center;
+  color: #2840fa;
+}
+.experience .experience__contenu {
+  margin-left: 15px;
+  padding-left: 30px;
+  width: 70%;
+}
+.experience .experience__contenu p {
+  font-weight: bold;
+  font-size: 120%;
+}
+.experience .experience__contenu em {
+  color: #2840fa;
+  margin-left: 10px;
+}
+.experience img {
+  width: 60%;
+  height: 400px;
+  margin: 20px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/** section interet**/
+.interet {
+  background-color: #E7E8EF;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.interet .interet__titre { /**on peut utiliser une extention**/
+  width: 100%;
+  height: 70px;
+  background-color: #181741;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.interet .interet__sous-titre {
+  margin-left: 15px;
+}
+.interet .interet__contenu {
+  margin-left: 15px;
+  padding-left: 30px;
+}
+.interet img {
+  height: 400px;
+  margin: 20px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.interet .interet__tiret {
+  width: 20px;
+  height: 10px;
+  background-color: #181741;
+  margin: 20px;
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 70px;
+  background-color: #181741;
 }
 
 /*# sourceMappingURL=style.css.map */

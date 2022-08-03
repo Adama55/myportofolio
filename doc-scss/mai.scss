@@ -4,7 +4,7 @@ $couleur-tertiaire: #E7E8EF;
 $couleur-link: #2840fa;
 
 @mixin border-rdus {
-    border-radius: 10px;
+    border-radius: 15px;
 }
 @mixin body-margin-left {
     margin-left: 15px;
@@ -20,13 +20,18 @@ $couleur-link: #2840fa;
     width: 15%;
     height: 40px;
 }
-@mixin conteneur-nva-btn2 {
+@mixin conteneur-menu-nav-btn {
     width: 80%;
-    height: 60px;
+    height: 50px;
 }
 @mixin conteneur-petit-tiret {
-    width: 10px;
-    height: 5px;
+    width: 20px;
+    height: 10px;
+}
+
+
+.demi-contener{
+    width: 50%;
 }
 
 /*-----------*/
@@ -57,6 +62,10 @@ header{
         }
     }
 }
+#retour{
+    position: fixed;
+    margin-left: 90%;
+}
 
 /** section profil**/
 .profil{
@@ -77,4 +86,223 @@ header{
         border-left:1px solid $couleur-secondaire;
         font-size: 120%;
     }
+}
+
+/** section menu-nav **/
+
+
+.menu-nav{
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    .menu-nav__items{
+        width: 60%;
+        background-color: $couleur-primaire;
+        border-radius: 0 50px 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        .menu-nav__items__btn{
+            background-color: $couleur-secondaire;
+            @include conteneur-menu-nav-btn ();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            &:hover{
+                background-color: white;
+                cursor: pointer;
+                a{
+                    color:$couleur-link ;
+                }
+            }
+        }
+        
+        
+    }
+    img{
+        width: 50%;
+        height: 100%;
+        object-fit:cover;
+        margin-left: -5%;
+    }
+
+}
+
+/** section comptences et service**/
+.comp-ser{
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    .comp-ser__service{
+        display: flex;
+        @include body-margin-right();
+        justify-content: flex-end;
+        h1{
+             background-color: $couleur-secondaire;
+             text-align: center;
+             width: 30%;
+        }
+       
+    }
+    .comp-ser__service-content{
+        display: flex;
+        @include body-margin-right();
+        margin-top: 10px;
+        padding-right: 20px;
+        justify-content: flex-end;
+        text-align: end;
+        border-right:2px solid $couleur-secondaire ;
+        font-size: 120%;
+    }
+    .comp-ser__competence{
+        h1{
+            background-color: $couleur-secondaire;
+             text-align: center;
+             width: 30%;
+        }
+    }
+    .comp-ser__competence-content{
+        display: flex;
+        @include body-margin-left();
+        margin: 10px;
+        padding-left: 20px;
+        border-left: 2px solid $couleur-secondaire ;
+        font-size: 120%;
+    }
+
+}
+
+/** section formaton et diplome--**/
+
+.formation{
+    background-color: $couleur-tertiaire;
+    @include body-margin-left();
+    @include body-margin-right();
+    padding-bottom: 20px;
+    .formation__titre{ /**on peut utiliser une extention**/
+        @include contener-primaire();
+        background-color: $couleur-primaire;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;        
+    }
+    .formation__tiret{
+        @include conteneur-petit-tiret();
+        background-color: $couleur-primaire;
+        margin: 20px;
+    }
+    .formation__sous-titre{
+        @include body-margin-left();
+        a{
+            display: flex;
+            justify-content: center;
+            color: $couleur-link;
+        }
+
+    }
+    .formation__contenu{
+        @include body-margin-left();
+        padding-left: 30px;
+        p{
+            font-weight: bold;
+        }
+    }
+}
+
+/** section expérience**/
+.experience{
+    background-color: $couleur-tertiaire;
+    @include body-margin-left();
+    @include body-margin-right();
+    margin-top: 30px;
+    padding-bottom: 20px;
+    .experience__titre{ /**on peut utiliser une extention**/
+        @include contener-primaire();
+        background-color: $couleur-primaire;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;        
+    }
+    .experience__tiret{
+        @include conteneur-petit-tiret();
+        background-color: $couleur-primaire;
+        margin: 20px;
+    }
+    .experience__sous-titre{
+        @include body-margin-left();
+        a{
+            display: flex;
+            justify-content: center;
+            color: $couleur-link;
+        }
+    }
+    .experience__contenu{
+        @include body-margin-left();
+        padding-left: 30px;
+        width: 70%;
+        p{
+            font-weight: bold;
+            font-size: 120%;
+        }
+        em {
+            color: $couleur-link;
+            margin-left: 10px;
+        }
+    }
+    img{
+        width: 60%;
+        height: 400px;
+        margin: 20px;
+        object-fit: cover;
+        @include border-rdus();
+    }
+}
+
+/** section interet**/
+.interet{
+    background-color: $couleur-tertiaire;
+    @include body-margin-left();
+    @include body-margin-right();
+    margin-top: 30px;
+    padding-bottom: 20px;
+    .interet__titre{ /**on peut utiliser une extention**/
+        @include contener-primaire();
+        background-color: $couleur-primaire;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;        
+    }
+    .interet__sous-titre{
+        @include body-margin-left();
+    }
+    .interet__contenu{
+        @include body-margin-left();
+        padding-left: 30px;
+    }
+    img{
+        height: 400px;
+        margin: 20px;
+        object-fit: cover;
+        @include border-rdus()
+    }
+    .interet__tiret{
+        @include conteneur-petit-tiret();
+        background-color: $couleur-primaire;
+        margin: 20px;
+    }
+}
+footer{
+    margin-top: 50px;
+    @include contener-primaire();
+    background-color: $couleur-primaire;
 }
