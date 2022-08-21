@@ -16,6 +16,7 @@ header .header__nav {
   background-color: #D9D9D9;
   width: 15%;
   height: 40px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,6 +80,7 @@ header .header__nav:hover a {
   background-color: #D9D9D9;
   width: 80%;
   height: 50px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;

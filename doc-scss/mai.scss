@@ -19,10 +19,12 @@ $couleur-link: #2840fa;
 @mixin conteneur-nav-btn {
     width: 15%;
     height: 40px;
+    border-radius: 5px;
 }
 @mixin conteneur-menu-nav-btn {
     width: 80%;
     height: 50px;
+    border-radius: 5px;
 }
 @mixin conteneur-petit-tiret {
     width: 20px;
